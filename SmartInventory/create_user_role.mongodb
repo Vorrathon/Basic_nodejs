@@ -1,0 +1,24 @@
+const database = 'admin'
+
+
+//เลิอกฐานข้อมูล
+use('admin')
+
+//เรียกดู user ในฐานข้อมูลที่เลือก
+db.getUsers()
+
+//ลบรายชื่อ user ที่ไม่ต้องการ
+//db.dropUser("ชื่อuser")
+
+//สร้าง user ใหม่ ใน mongodb
+// db.createUser({
+//     user:"vorrathon",
+//     pwd:"123456",
+//     roles:[
+//         {
+//             role:"userAdminAnyDatabase", //ทำได้ทุกอย่างของ admin
+//             db:"admin"
+//         },
+//         "readWriteAnyDatabase"
+//     ]
+// })
